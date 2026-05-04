@@ -12,7 +12,7 @@ export function ConnectButton() {
           {address.slice(0, 6)}...{address.slice(-6)}
         </span>
         <button className={styles.disconnectBtn} onClick={disconnect}>
-          Bağlantıyı Kes
+          Disconnect
         </button>
       </div>
     );
@@ -26,7 +26,7 @@ export function ConnectButton() {
         rel="noopener noreferrer"
         className={styles.installLink}
       >
-        Freighter Yükle →
+        Install Freighter →
       </a>
     );
   }
@@ -40,12 +40,12 @@ export function ConnectButton() {
       {status === "connecting" ? (
         <>
           <span className={styles.spinner} />
-          Bağlanıyor...
+          Connecting...
         </>
       ) : (
         <>
           <FreighterIcon />
-          Freighter ile Bağlan
+          Connect Freighter
         </>
       )}
     </button>

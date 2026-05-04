@@ -1,4 +1,67 @@
-# Stellar Wallet & Akıllı Sözleşme Projesi
+# Stellar Simple Payment dApp
+
+A minimal Stellar Testnet web app built with React + TypeScript.
+
+It lets you:
+- Connect Freighter wallet
+- View wallet information and XLM balance
+- Sign and submit one XLM payment transaction
+
+## Tech Stack
+
+- Frontend: React 18 + TypeScript + Vite
+- Wallet: @stellar/freighter-api v4
+- SDK: @stellar/stellar-sdk v13
+- Network: Stellar Testnet
+
+## Prerequisites
+
+- Node.js 18+
+- Freighter browser extension
+- Freighter network set to Testnet
+- A funded Testnet account (use Friendbot)
+
+Friendbot URL:
+
+https://friendbot.stellar.org?addr=YOUR_PUBLIC_KEY
+
+## Run Locally
+
+1) Install dependencies
+
+cd frontend
+npm install
+
+2) Start the app
+
+npm run dev
+
+Open http://localhost:3000
+
+## How to Test a Transaction
+
+1. Click Connect Freighter
+2. Paste a destination Stellar address (G...)
+  - Quick test: use your own address as destination
+3. Enter amount (for example 1)
+4. Click Sign & Send
+5. Approve in Freighter popup
+6. Open the generated explorer link
+
+## Project Structure
+
+- frontend/src/components/ConnectButton.tsx → wallet connect/disconnect UI
+- frontend/src/components/WalletInfo.tsx → account info and balance
+- frontend/src/components/PaymentCard.tsx → payment transaction form and submit flow
+- frontend/src/lib/stellar.ts → network config and Horizon helpers
+
+## Notes
+
+- This app is for Testnet only.
+- Never share your secret key.
+- Keep transaction amounts small while testing.
+
+<!-- Legacy content below is kept for reference only.
 
 > Freighter cüzdanı ile Stellar Testnet'e bağlanan, XLM bakiyesi gösteren ve Soroban akıllı sözleşmesiyle etkileşime giren tam yığın bir web uygulaması.
 
@@ -969,3 +1032,4 @@ Bu proje MIT Lisansı ile lisanslanmıştır.
 <div align="center">
   <sub>Stellar Testnet üzerinde çalışmaktadır · Gerçek para içermez</sub>
 </div>
+-->

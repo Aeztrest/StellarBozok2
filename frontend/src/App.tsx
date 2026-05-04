@@ -1,7 +1,7 @@
 import { useFreighter } from "./hooks/useFreighter";
 import { ConnectButton } from "./components/ConnectButton";
 import { WalletInfo } from "./components/WalletInfo";
-import { CounterContract } from "./components/CounterContract";
+import { PaymentCard } from "./components/PaymentCard";
 import styles from "./App.module.css";
 
 export default function App() {
@@ -20,12 +20,12 @@ export default function App() {
       <main className={styles.main}>
         <div className={styles.hero}>
           <h1 className={styles.title}>
-            Stellar ağına<br />
-            <span className={styles.accent}>bağlanın</span>
+            Stellar Testnet<br />
+            <span className={styles.accent}>Simple Payment dApp</span>
           </h1>
           <p className={styles.subtitle}>
-            Freighter cüzdanınızı bağlayarak XLM bakiyenizi ve hesap
-            bilgilerinizi görüntüleyin.
+            Connect Freighter, check your wallet info, and send a single XLM
+            transaction in seconds.
           </p>
 
           {error && (
@@ -36,7 +36,7 @@ export default function App() {
         </div>
 
         <WalletInfo />
-        <CounterContract />
+        <PaymentCard />
       </main>
 
       <footer className={styles.footer}>
