@@ -1,0 +1,14 @@
+{
+  "name": "stellar-wallet-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@stellar/stellar-sdk": "^13.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}
