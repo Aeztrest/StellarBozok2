@@ -25,6 +25,13 @@ Friendbot URL:
 
 https://friendbot.stellar.org?addr=YOUR_PUBLIC_KEY
 
+Tx:
+
+85e956057af316b82e3bada79cdaea899a30a4a4d18da43287d29d46d3037e06
+
+<img width="1358" height="413" alt="image" src="https://github.com/user-attachments/assets/15a993a3-fccb-405c-8e37-aabd7d6f76d3" />
+
+
 ## Run Locally
 
 1) Install dependencies
